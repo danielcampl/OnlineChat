@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import style from './Chat.module.css';
-import Input from '@mui/material/Input';
+// import Input from '@mui/material/Input';
 import SendIcon from '@mui/icons-material/Send';
 
 export default function Chat({ socket }) {
@@ -58,8 +58,8 @@ export default function Chat({ socket }) {
                     }
                     <div ref={scrollRef} />
                 </div>
-                <div className={style["chat-footer"]}>
-                    <Input inputRef={messageRef} placeholder='Mensagem' onKeyDown={(e) => getEnter(e)} fullWidth />
+                <div className="chat-footer">
+                    <input inputRef={messageRef} placeholder='Mensagem' onKeyDown={(e) => getEnter(e)} />
                     <SendIcon sx={{m:1, cursor: 'pointer'}} onClick={() => handleMessage()} />
                 </div>
             </div>
