@@ -1,9 +1,12 @@
 const app = require('express')();
 const server = require('http').createServer(app);
-const io = require('socket.io')(server, {cors: {origin:
-    // 'http://127.0.0.1:5173'
-    'https://online-chat-frontend-gules.vercel.app'
-}});
+const io = require('socket.io')(server, {
+    cors: {
+        origin:
+            // 'http://127.0.0.1:5173'
+            'https://online-chat-frontend-gules.vercel.app'
+    }
+});
 
 const PORT = 3001;
 

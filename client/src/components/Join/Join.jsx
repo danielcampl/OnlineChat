@@ -10,7 +10,7 @@ export default function Join({ setChatVisible, setSocket }) {
     const socket = await io.connect(
       // 'http://localhost:3001'
       'https://online-chat-backend-five.vercel.app'
-      );
+    );
     socket.emit('set_username', username);
     setSocket(socket);
     setChatVisible(true);
