@@ -31,4 +31,30 @@
     background-color: skyblue;
     overflow-wrap: break-word;
   }
+
+  .chat-footer{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    bottom: 0;
+    height: 10px;
+    gap: 5px;
+  }
+
+  .chat-input{
+    border: none;
+    border-bottom: 1px solid #6c757d;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    color: #000;
+  }
+
+  .submit-button{
+    padding: 12px;
+    background-color: #c9e6ff;
+  }
   
